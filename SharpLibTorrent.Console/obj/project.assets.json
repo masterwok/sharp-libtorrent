@@ -1,0 +1,80 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "SharpLibTorrent/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/SharpLibTorrent.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharpLibTorrent.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SharpLibTorrent/1.0.0": {
+      "type": "project",
+      "path": "../SharpLibTorrent/SharpLibTorrent.csproj",
+      "msbuildProject": "../SharpLibTorrent/SharpLibTorrent.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "SharpLibTorrent >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/masterwok/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/masterwok/projects/sharp-libtorrent/SharpLibTorrent.Console/SharpLibTorrent.Console.csproj",
+      "projectName": "SharpLibTorrent.Console",
+      "projectPath": "/home/masterwok/projects/sharp-libtorrent/SharpLibTorrent.Console/SharpLibTorrent.Console.csproj",
+      "packagesPath": "/home/masterwok/.nuget/packages/",
+      "outputPath": "/home/masterwok/projects/sharp-libtorrent/SharpLibTorrent.Console/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/masterwok/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "/home/masterwok/projects/sharp-libtorrent/SharpLibTorrent/SharpLibTorrent.csproj": {
+              "projectPath": "/home/masterwok/projects/sharp-libtorrent/SharpLibTorrent/SharpLibTorrent.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

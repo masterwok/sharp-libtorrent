@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Common.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\Common.CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="CppSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\CppSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="CppSharp.AST, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\CppSharp.AST.dll</HintPath>
+      </Reference>
+      <Reference Include="CppSharp.Generator, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\CppSharp.Generator.dll</HintPath>
+      </Reference>
+      <Reference Include="CppSharp.Parser, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\CppSharp.Parser.dll</HintPath>
+      </Reference>
+      <Reference Include="CppSharp.Parser.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\CppSharp.Parser.CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="CppSharp.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\CppSharp.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="CSharp.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\CSharp.CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Encodings.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\Encodings.CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="NamespacesBase.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\NamespacesBase.CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="NamespacesDerived.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\NamespacesDerived.CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="VTables.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>Lib\CppSharp\VTables.CSharp.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

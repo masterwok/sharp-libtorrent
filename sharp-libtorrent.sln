@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpLibTorrent.Console", "SharpLibTorrent.Console\SharpLibTorrent.Console.csproj", "{F4BD5D86-7B56-41B6-B595-BCA92A4B2B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpLibTorrent", "SharpLibTorrent\SharpLibTorrent.csproj", "{FB4C65B4-EE77-4BB1-8B98-414389784B5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4BD5D86-7B56-41B6-B595-BCA92A4B2B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BD5D86-7B56-41B6-B595-BCA92A4B2B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BD5D86-7B56-41B6-B595-BCA92A4B2B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BD5D86-7B56-41B6-B595-BCA92A4B2B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4C65B4-EE77-4BB1-8B98-414389784B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4C65B4-EE77-4BB1-8B98-414389784B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4C65B4-EE77-4BB1-8B98-414389784B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4C65B4-EE77-4BB1-8B98-414389784B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
