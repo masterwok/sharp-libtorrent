@@ -1,5 +1,6 @@
 using CppSharp;
 using CppSharp.AST;
+using CppSharp.Generators;
 
 namespace SharpLibTorrent
 {
@@ -7,22 +8,29 @@ namespace SharpLibTorrent
     {
         public void Preprocess(Driver driver, ASTContext ctx)
         {
-            throw new System.NotImplementedException();
         }
 
         public void Postprocess(Driver driver, ASTContext ctx)
         {
-            throw new System.NotImplementedException();
         }
 
         public void Setup(Driver driver)
         {
-            throw new System.NotImplementedException();
+            var options = driver.Options;
+
+            options.GeneratorKind = GeneratorKind.CSharp;
+
+            var module = options.AddModule("SharpLibTorrent");
+
+            const string pathRootInclude = "~/Lib/libtorrent";
+
+            module.IncludeDirs.Add($"{pathRootInclude}");
+            module.IncludeDirs.Add($"{pathRootInclude}/extensions");
+            module.IncludeDirs.Add($"{pathRootInclude}/kademlia");
         }
 
         public void SetupPasses(Driver driver)
         {
-            throw new System.NotImplementedException();
         }
 
         public static void GenerateBindings() => ConsoleDriver.Run(new SharpLibTorrent());
