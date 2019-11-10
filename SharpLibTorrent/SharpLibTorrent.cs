@@ -8,6 +8,7 @@ namespace SharpLibTorrent
     {
         public void Preprocess(Driver driver, ASTContext ctx)
         {
+            
         }
 
         public void Postprocess(Driver driver, ASTContext ctx)
@@ -17,22 +18,18 @@ namespace SharpLibTorrent
         public void Setup(Driver driver)
         {
             var options = driver.Options;
-
             options.GeneratorKind = GeneratorKind.CSharp;
-
             var module = options.AddModule("SharpLibTorrent");
-
-            const string pathRootInclude = "~/Lib/libtorrent";
-
-            module.IncludeDirs.Add($"{pathRootInclude}");
-            module.IncludeDirs.Add($"{pathRootInclude}/extensions");
-            module.IncludeDirs.Add($"{pathRootInclude}/kademlia");
+//            module.IncludeDirs.Add("C:\Sample\include");
+//            module.Headers.Add("Sample.h");
+//            module.LibraryDirs.Add("C:\Sample\lib");
+//            module.Libraries.Add("Sample.lib");
         }
 
         public void SetupPasses(Driver driver)
         {
         }
-
+        
         public static void GenerateBindings() => ConsoleDriver.Run(new SharpLibTorrent());
     }
 }
