@@ -32,105 +32,101 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\Common.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\CppSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.AST, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\CppSharp.AST.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Generator, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\CppSharp.Generator.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Parser, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\CppSharp.Parser.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Parser.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\CppSharp.Parser.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="CppSharp.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\CppSharp.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="CSharp.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\CSharp.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Encodings.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\Encodings.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="NamespacesBase.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\NamespacesBase.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="NamespacesDerived.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\NamespacesDerived.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="VTables.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>Lib\VTables.CSharp.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SharpLibTorrent.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Lib\Common.CSharp.dll" />
-    <Content Include="Lib\CppSharp.AST.dll" />
-    <Content Include="Lib\CppSharp.dll" />
-    <Content Include="Lib\CppSharp.Generator.dll" />
-    <Content Include="Lib\CppSharp.Parser.CSharp.dll" />
-    <Content Include="Lib\CppSharp.Parser.dll" />
-    <Content Include="Lib\CppSharp.Runtime.dll" />
-    <Content Include="Lib\CSharp.CSharp.dll" />
-    <Content Include="Lib\Encodings.CSharp.dll" />
-    <ContentWithTargetPath Include="Lib\libCLI.Native.so">
+    <Content Include="Lib\CppSharp\Common.CSharp.dll" />
+    <Content Include="Lib\CppSharp\CppSharp.AST.dll" />
+    <Content Include="Lib\CppSharp\CppSharp.dll" />
+    <Content Include="Lib\CppSharp\CppSharp.Generator.dll" />
+    <Content Include="Lib\CppSharp\CppSharp.Parser.CSharp.dll" />
+    <Content Include="Lib\CppSharp\CppSharp.Parser.dll" />
+    <Content Include="Lib\CppSharp\CppSharp.Runtime.dll" />
+    <Content Include="Lib\CppSharp\CSharp.CSharp.dll" />
+    <Content Include="Lib\CppSharp\VTables.CSharp.dll" />
+    <ContentWithTargetPath Include="Lib\CppSharp\libCLI.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libCLI.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libCommon.Native.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libCommon.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libCommon.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libCppSharp.CppParser.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libCppSharp.CppParser.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libCppSharp.CppParser.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libCSharp.Native.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libCSharp.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libCSharp.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libEncodings.Native.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libEncodings.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libEncodings.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libNamespacesBase.Native.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libNamespacesBase.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libNamespacesBase.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libNamespacesDerived.Native.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libNamespacesDerived.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libNamespacesDerived.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libStandardLib.Native.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libStandardLib.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libStandardLib.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libStd-symbols.so">
+    <ContentWithTargetPath Include="Lib\CppSharp\libStd-symbols.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libStd-symbols.so</TargetPath>
     </ContentWithTargetPath>
-    <ContentWithTargetPath Include="Lib\libVTables.Native.so">
+    <Content Include="Lib\CppSharp\Encodings.CSharp.dll" />
+    <Content Include="Lib\CppSharp\NamespacesBase.CSharp.dll" />
+    <Content Include="Lib\CppSharp\NamespacesDerived.CSharp.dll" />
+    <ContentWithTargetPath Include="Lib\CppSharp\libVTables.Native.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>libVTables.Native.so</TargetPath>
     </ContentWithTargetPath>
-    <Content Include="Lib\NamespacesBase.CSharp.dll" />
-    <Content Include="Lib\NamespacesDerived.CSharp.dll" />
-    <Content Include="Lib\VTables.CSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Common.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\Common.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\CppSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.AST, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\CppSharp.AST.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.Generator, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\CppSharp.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.Parser, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\CppSharp.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.Parser.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\CppSharp.Parser.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\CppSharp.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="CSharp.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\CSharp.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Encodings.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\Encodings.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NamespacesBase.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\NamespacesBase.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NamespacesDerived.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\NamespacesDerived.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="VTables.CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Lib\CppSharp\VTables.CSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
